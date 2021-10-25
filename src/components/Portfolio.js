@@ -1,8 +1,9 @@
 import './Portfolio.scss';
 import * as React from 'react';
 import { BrowserRouter as Router, Switch, Route, NavLink } from 'react-router-dom';
-import GamesPortfolio from './GamesPortfolio';
-import SoftwarePortfolio from './SoftwarePortfolio';
+import PortfolioContainer from './PortfolioContainer';
+import gamesList from '../data/GamesData';
+import softwareList from '../data/SoftwareData';
 
 function Portfolio() {
 	return (
@@ -25,10 +26,10 @@ function Portfolio() {
 
 				<Switch>
 					<Route path="/GamesPortolio">
-						<GamesPortfolio />
+						<PortfolioContainer portfolio={gamesList} />
 					</Route>
 					<Route path="/SoftwarePortfolio">
-						<SoftwarePortfolio />
+						<PortfolioContainer portfolio={softwareList} />
 					</Route>
 				</Switch>
 			</Router>

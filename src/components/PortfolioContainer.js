@@ -2,16 +2,18 @@ import './Portfolio.scss';
 import * as React from 'react';
 import PortfolioElement from './PortfolioElement';
 import gamesList from '../data/GamesData';
-function GamesPortfolio() {
+
+function PortfolioContainer(props) {
+	let { portfolio } = props;
 	return (
 		<div className="Portfolio-container">
 			<div className="Portfolio-content">
-				{gamesList.map((game, idx) => {
-					return <PortfolioElement key={idx} elementInfo={game} />;
+				{portfolio.map((element, idx) => {
+					return <PortfolioElement key={idx} elementInfo={element} />;
 				})}
 			</div>
 		</div>
 	);
 }
 
-export default GamesPortfolio;
+export default PortfolioContainer;
