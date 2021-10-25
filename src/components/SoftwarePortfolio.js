@@ -1,20 +1,16 @@
 import './Portfolio.scss';
 import PortfolioElement from './PortfolioElement';
 import './PortfolioElement.scss';
-import tempImg from '../img/portfolio/programming.jpg';
 import * as React from 'react';
+import softwareList from '../data/SoftwareData';
 
 function SoftwarePortfolio() {
 	return (
 		<div className="Portfolio-container">
 			<div className="Portfolio-content">
-				<PortfolioElement imgSrc={tempImg} />
-				<PortfolioElement imgSrc={tempImg} />
-				<PortfolioElement imgSrc={tempImg} />
-				<PortfolioElement imgSrc={tempImg} />
-				<PortfolioElement imgSrc={tempImg} />
-				<PortfolioElement imgSrc={tempImg} />
-				<PortfolioElement imgSrc={tempImg} />
+				{softwareList.map((soft, idx) => {
+					return <PortfolioElement key={idx} elementInfo={soft} />;
+				})}
 			</div>
 		</div>
 	);

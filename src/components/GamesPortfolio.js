@@ -1,19 +1,14 @@
 import './Portfolio.scss';
 import * as React from 'react';
 import PortfolioElement from './PortfolioElement';
-import happyHour from '../img/portfolio/happy-hour.png';
-
+import gamesList from '../data/GamesData';
 function GamesPortfolio() {
 	return (
 		<div className="Portfolio-container">
 			<div className="Portfolio-content">
-				<PortfolioElement imgSrc={happyHour} />
-				<PortfolioElement imgSrc={happyHour} />
-				<PortfolioElement imgSrc={happyHour} />
-				<PortfolioElement imgSrc={happyHour} />
-				<PortfolioElement imgSrc={happyHour} />
-				<PortfolioElement imgSrc={happyHour} />
-				<PortfolioElement imgSrc={happyHour} />
+				{gamesList.map((game, idx) => {
+					return <PortfolioElement key={idx} elementInfo={game} />;
+				})}
 			</div>
 		</div>
 	);

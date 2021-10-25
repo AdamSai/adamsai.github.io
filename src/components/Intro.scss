@@ -7,8 +7,9 @@
 
 	.Intro-content {
 		display: flex;
+		flex-wrap: wrap;
 		justify-content: center;
-		width: 50%;
+		width: 61%;
 		padding: 3%;
 		border-color: #4eabc580;
 		border-width: 2px;
@@ -24,6 +25,7 @@
 		.Intro-text {
 			align-self: center;
 			padding-left: 3%;
+			width: 50em;
 			font-family: 'Roboto', sans-serif;
 			font-size: 20px;
 			line-height: 30px;

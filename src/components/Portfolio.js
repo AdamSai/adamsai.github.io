@@ -1,6 +1,6 @@
 import './Portfolio.scss';
 import * as React from 'react';
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route, NavLink } from 'react-router-dom';
 import GamesPortfolio from './GamesPortfolio';
 import SoftwarePortfolio from './SoftwarePortfolio';
 
@@ -10,14 +10,17 @@ function Portfolio() {
 			<h2>Portfolio</h2>
 			<Router>
 				<div className="Portfolio-root-content">
-					<Link className="Portfolio-button-text" to="/GamesPortolio">
+					<NavLink className="Portfolio-button-text" to="/GamesPortolio">
 						<span>Games</span>
 						<div className="Portfolio-button-image Games-image" />
-					</Link>
-					<Link className="Portfolio-button-text" to="/SoftwarePortfolio">
+					</NavLink>
+					<NavLink
+						activeClassName="active"
+						className="Portfolio-button-text"
+						to="/SoftwarePortfolio">
 						<span>Software</span>
 						<div className="Portfolio-button-image Soft-image" />
-					</Link>
+					</NavLink>
 				</div>
 
 				<Switch>
