@@ -2,14 +2,14 @@
 
 .Portfolio-root-container {
 	display: flex;
-	// justify-content: center;
 	flex-direction: column;
 	width: 100%;
 	min-height: 500px;
 	color: $primary-color;
 	h2 {
-		align-self: center;
-		font-size: 30px;
+		font-size: 3em;
+		width: 100%;
+		text-align: center;
 	}
 	.Portfolio-root-content {
 		display: flex;
