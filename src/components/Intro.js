@@ -1,7 +1,6 @@
 import './Intro.scss';
 
 import * as React from 'react';
-import ReactDOM from 'react-dom';
 import Avatar from '@mui/material/Avatar';
 import portrait from '../img/me.png';
 

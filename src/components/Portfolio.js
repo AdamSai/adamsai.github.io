@@ -1,8 +1,6 @@
 import './Portfolio.scss';
 
 import * as React from 'react';
-import ReactDOM from 'react-dom';
-import Avatar from '@mui/material/Avatar';
 
 function Portfolio() {
 	return (

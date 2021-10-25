@@ -1,4 +1,3 @@
-import logo from './img/under_construction.gif';
 import Intro from './components/Intro';
 import Portfolio from './components/Portfolio';
 
