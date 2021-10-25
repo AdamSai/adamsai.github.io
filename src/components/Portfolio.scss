@@ -1,17 +1,17 @@
 @import '../Global.scss';
 
-.Portfolio-container {
+.Portfolio-root-container {
 	display: flex;
-	justify-content: center;
+	// justify-content: center;
 	flex-direction: column;
 	width: 100%;
-	height: 500px;
+	min-height: 500px;
 	color: $primary-color;
 	h2 {
 		align-self: center;
 		font-size: 30px;
 	}
-	.Portfolio-content {
+	.Portfolio-root-content {
 		display: flex;
 		justify-content: center;
 		width: 100%;
@@ -35,9 +35,9 @@
 			}
 
 			.Portfolio-button-image {
+				min-height: 150px;
 				transition: opacity 1s;
 				width: 100%;
-				height: 100%;
 				display: flex;
 				align-items: center;
 				justify-content: center;

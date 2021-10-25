@@ -1,0 +1,31 @@
+.Portfolio-container {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: 100%;
+	align-items: center;
+	.Portfolio-content {
+		display: flex;
+		height: 100%;
+		width: 75%;
+		flex-wrap: wrap;
+		justify-content: center;
+
+		.Portfolio-element {
+			display: flex;
+			margin: 5px;
+			flex-direction: column;
+			max-width: 30%;
+			height: 100%;
+			.Portfolio-element-title {
+				font-size: 24px;
+				align-self: center;
+			}
+
+			.Portfolio-element-image {
+				width: 100%;
+				height: 100%;
+			}
+		}
+	}
+}
