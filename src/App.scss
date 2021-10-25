@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import './Global.scss';
+
+@font-face {
+	font-family: 'tarrget';
+	src: local('tarrget'), url(./fonts/tarrget.ttf) format('opentype');
+}
+
+.App {
+	background-color: $background-color;
+	min-height: 100vh;
+}
+
+.App-header {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-size: calc(10px + 2vmin);
+	color: white;
+
+	h1 {
+		color: #1bf0ff;
+		font-family: 'tarrget', sans-serif;
+		letter-spacing: 5px;
+	}
+}
+
+@keyframes App-logo-spin {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}

@@ -1,0 +1,68 @@
+@import '../Global.scss';
+
+.Portfolio-container {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	width: 100%;
+	height: 500px;
+	color: $primary-color;
+	h2 {
+		align-self: center;
+		font-size: 30px;
+	}
+	.Portfolio-content {
+		display: flex;
+		justify-content: center;
+		width: 100%;
+		height: 100%;
+		// background-color: blue;
+
+		.Portfolio-button-text {
+			width: 25%;
+			height: 100%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+			font-size: 48px;
+
+			span {
+				position: absolute;
+				color: $primary-color;
+				z-index: 100;
+				pointer-events: none;
+			}
+
+			.Portfolio-button-image {
+				transition: opacity 1s;
+				width: 100%;
+				height: 100%;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				background-repeat: no-repeat;
+				background-size: cover;
+				border-radius: 20px;
+				color: $primary-color;
+				font-size: 48px;
+				opacity: 0.3;
+				cursor: pointer;
+			}
+
+			.Games-image {
+				background-image: url('../img/portfolio/happy-hour.png');
+				margin: 5px;
+			}
+			.Soft-image {
+				background-image: url('../img/portfolio/programming.jpg');
+				margin: 5px;
+			}
+			.Portfolio-button-image:hover {
+				transition: opacity 1s;
+				opacity: 1;
+			}
+		}
+	}
+}

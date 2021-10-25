@@ -1,12 +1,17 @@
 import logo from './img/under_construction.gif';
-import './App.css';
+import Intro from './components/Intro';
+import Portfolio from './components/Portfolio';
+
+import './App.scss';
 
 function App() {
 	return (
 		<div className="App">
 			<header className="App-header">
-				<img src={logo} className="App-logo" alt="logo" />
+				<h1>Adam Saidane</h1>
 			</header>
+			<Intro />
+			<Portfolio />
 		</div>
 	);
 }
