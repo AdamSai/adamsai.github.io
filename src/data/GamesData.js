@@ -1,87 +1,42 @@
 const games = [
 	{
-		title: 'Sample element',
+		title: 'Happy Hour',
 		imgSrc: require('../img/portfolio/happy-hour.png'),
-		description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-    Ipsum has been the industry's standard dummy text ever since the 1500s, when an
-    unknown printer took a galley of type and scrambled it to make a type specimen book.
-    It has survived not only five centuries, but also the leap into electronic
-    typesetting, remaining essentially unchanged. It was popularised in the 1960s with
-    the release of Letraset sheets containing Lorem Ipsum passages, and more recently
-    with desktop publishing software like Aldus PageMaker including versions of Lorem
-    Ipsum.`,
+		year: 2021,
+		description: `Happy Hour was made for Ludom Dare 49. The theme was 'unstable' and we decided
+    to make a beer serving game. You have to serve beers to customers before they get angry. The drunker
+    they get, and the longer they have to wait, the likelier they are to start fighting. As the waiter
+    you can also headbutt the patrons if you really feel like it. I worked on bug-fixing and refactoring 
+    the AI after submission. I also tried out the new UI Toolkit for Unity.`,
+		sourceCode: 'https://github.com/MrAbnox/LD49',
+		projectLink: 'https://pedrorainha.itch.io/ld-49-happy-hour',
 	},
 	{
-		title: 'Sample element',
-		imgSrc: require('../img/portfolio/happy-hour.png'),
-		description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-    Ipsum has been the industry's standard dummy text ever since the 1500s, when an
-    unknown printer took a galley of type and scrambled it to make a type specimen book.
-    It has survived not only five centuries, but also the leap into electronic
-    typesetting, remaining essentially unchanged. It was popularised in the 1960s with
-    the release of Letraset sheets containing Lorem Ipsum passages, and more recently
-    with desktop publishing software like Aldus PageMaker including versions of Lorem
-    Ipsum.`,
+		title: 'Crate Spider',
+		year: 2021,
+		imgSrc: require('../img/portfolio/crate-spiderpng.png'),
+		description: `Crate Spider is a challenging game inspired by SpeedRunners and Spider-Man. The
+    goal of the game is to clear all levels as fast as possible. Once you get the hang of how to 
+    keep your momentum the game is really fun. It was made as a prototype for the class Making Games
+    at the IT University of Copenhagen. `,
+		projectLink: 'https://predmada.itch.io/crate-spider',
 	},
 	{
-		title: 'Sample element',
-		imgSrc: require('../img/portfolio/happy-hour.png'),
-		description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-    Ipsum has been the industry's standard dummy text ever since the 1500s, when an
-    unknown printer took a galley of type and scrambled it to make a type specimen book.
-    It has survived not only five centuries, but also the leap into electronic
-    typesetting, remaining essentially unchanged. It was popularised in the 1960s with
-    the release of Letraset sheets containing Lorem Ipsum passages, and more recently
-    with desktop publishing software like Aldus PageMaker including versions of Lorem
-    Ipsum.`,
+		title: "Adam's Tower Defense",
+		year: 2019,
+		imgSrc: require('../img/portfolio/tower-defense.png'),
+		description: `My tower defense game was created as an assignment for the Games elective course
+    during my A.P. Degree. The task was to create a tower defense game, where if the path was blocked,
+    the AI would destroy towers to make a new path.`,
+		projectLink: 'https://predmada.itch.io/adams-tower-defense',
 	},
 	{
-		title: 'Sample element',
-		imgSrc: require('../img/portfolio/happy-hour.png'),
-		description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-    Ipsum has been the industry's standard dummy text ever since the 1500s, when an
-    unknown printer took a galley of type and scrambled it to make a type specimen book.
-    It has survived not only five centuries, but also the leap into electronic
-    typesetting, remaining essentially unchanged. It was popularised in the 1960s with
-    the release of Letraset sheets containing Lorem Ipsum passages, and more recently
-    with desktop publishing software like Aldus PageMaker including versions of Lorem
-    Ipsum.`,
-	},
-	{
-		title: 'Sample element',
-		imgSrc: require('../img/portfolio/happy-hour.png'),
-		description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-    Ipsum has been the industry's standard dummy text ever since the 1500s, when an
-    unknown printer took a galley of type and scrambled it to make a type specimen book.
-    It has survived not only five centuries, but also the leap into electronic
-    typesetting, remaining essentially unchanged. It was popularised in the 1960s with
-    the release of Letraset sheets containing Lorem Ipsum passages, and more recently
-    with desktop publishing software like Aldus PageMaker including versions of Lorem
-    Ipsum.`,
-	},
-	{
-		title: 'Sample element',
-		imgSrc: require('../img/portfolio/happy-hour.png'),
-		description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-    Ipsum has been the industry's standard dummy text ever since the 1500s, when an
-    unknown printer took a galley of type and scrambled it to make a type specimen book.
-    It has survived not only five centuries, but also the leap into electronic
-    typesetting, remaining essentially unchanged. It was popularised in the 1960s with
-    the release of Letraset sheets containing Lorem Ipsum passages, and more recently
-    with desktop publishing software like Aldus PageMaker including versions of Lorem
-    Ipsum.`,
-	},
-	{
-		title: 'Sample element',
-		imgSrc: require('../img/portfolio/happy-hour.png'),
-		description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-    Ipsum has been the industry's standard dummy text ever since the 1500s, when an
-    unknown printer took a galley of type and scrambled it to make a type specimen book.
-    It has survived not only five centuries, but also the leap into electronic
-    typesetting, remaining essentially unchanged. It was popularised in the 1960s with
-    the release of Letraset sheets containing Lorem Ipsum passages, and more recently
-    with desktop publishing software like Aldus PageMaker including versions of Lorem
-    Ipsum.`,
+		title: 'Project Boost',
+		year: 2018,
+		imgSrc: require('../img/portfolio/boost.png'),
+		description: `Project Boost was my second ever Unity project. It was created as part of a 
+    Udemy course to prepare me for my Games elective on the 4th Semester of my A.P. Degree.`,
+		projectLink: 'https://predmada.itch.io/project-boost',
 	},
 ];
 

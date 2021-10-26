@@ -1,7 +1,6 @@
 import './Portfolio.scss';
 import * as React from 'react';
 import PortfolioElement from './PortfolioElement';
-import gamesList from '../data/GamesData';
 
 function PortfolioContainer(props) {
 	let { portfolio } = props;

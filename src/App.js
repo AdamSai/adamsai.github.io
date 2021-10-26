@@ -2,6 +2,7 @@ import Intro from './components/Intro';
 import Portfolio from './components/Portfolio';
 
 import './App.scss';
+import Footer from './components/Footer';
 
 function App() {
 	return (
@@ -11,6 +12,7 @@ function App() {
 			</header>
 			<Intro />
 			<Portfolio />
+			<Footer />
 		</div>
 	);
 }

@@ -1,0 +1,20 @@
+@import '../Global.scss';
+
+.Footer {
+	width: 100%;
+	position: sticky;
+	bottom: 0;
+	background-color: #181a1f;
+	height: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	.Footer-icons {
+		color: white;
+		cursor: pointer;
+		.Footer-icon {
+			height: 30px;
+			margin-left: 10px;
+		}
+	}
+}
