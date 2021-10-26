@@ -6,14 +6,26 @@ import LinkIcon from '@mui/icons-material/Link';
 function PortfolioElement(props) {
 	let { title, imgSrc, year, description, projectLink, sourceCode } = props.elementInfo;
 
-	let sourceCodeButton = () => {
-		if (sourceCode)
-			return (
+	let buttons = () => {
+		let jsx = [];
+		let counter = 0;
+		if (projectLink) {
+			jsx[counter++] = (
+				<span onClick={() => window.open(projectLink)} className="Portfolio-element-button">
+					<LinkIcon className="Portfolio-element-icon" />
+					<span>Project</span>
+				</span>
+			);
+		}
+		if (sourceCode) {
+			jsx[counter++] = (
 				<span onClick={() => window.open(sourceCode)} className="Portfolio-element-button">
 					<GitHubIcon className="Portfolio-element-icon" />
 					<span>Source code</span>
 				</span>
 			);
+		}
+		return jsx;
 	};
 	return (
 		<div className="Portfolio-element">
@@ -24,13 +36,7 @@ function PortfolioElement(props) {
 				Year: <span style={{ color: 'white' }}>{year}</span>
 			</span>
 			<span className="Portfolio-element-description">{description}</span>
-			<div className="Portfolio-element-buttons">
-				<span onClick={() => window.open(projectLink)} className="Portfolio-element-button">
-					<LinkIcon className="Portfolio-element-icon" />
-					<span>Project</span>
-				</span>
-				{sourceCodeButton()}
-			</div>
+			<div className="Portfolio-element-buttons">{buttons()}</div>
 		</div>
 	);
 }
