@@ -4,15 +4,23 @@
 	width: 100%;
 	position: sticky;
 	bottom: 0;
-	background-color: #181a1f;
 	height: 50px;
 	display: flex;
-	align-items: center;
+	align-items: flex-end;
 	justify-content: center;
+	min-height: 20vh;
+	pointer-events: none;
 	.Footer-icons {
+		pointer-events: all;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background-color: #181a1f;
+		height: 60px;
+		width: 100%;
 		color: white;
-		cursor: pointer;
 		.Footer-icon {
+			cursor: pointer;
 			height: 30px;
 			margin-left: 10px;
 		}
