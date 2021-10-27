@@ -1,38 +1,42 @@
 import './Portfolio.scss';
-import * as React from 'react';
-import { BrowserRouter as Router, Switch, Route, NavLink } from 'react-router-dom';
+import React, { useState } from 'react';
 import PortfolioContainer from './PortfolioContainer';
 import gamesList from '../data/GamesData';
 import softwareList from '../data/SoftwareData';
 
 function Portfolio() {
+	const [activeList, setActiveList] = useState('games');
+	let portfolioElements = () => {
+		if (activeList === 'games') {
+			return <PortfolioContainer portfolio={gamesList} />;
+		} else {
+			return <PortfolioContainer portfolio={softwareList} />;
+		}
+	};
 	return (
 		<div className="Portfolio-root-container">
 			<h2>Portfolio</h2>
-			<Router>
-				<div className="Portfolio-root-content">
-					<NavLink className="Portfolio-button-text" to="/GamesPortolio">
-						<span>Games</span>
-						<div className="Portfolio-button-image Games-image" />
-					</NavLink>
-					<NavLink
-						activeClassName="active"
-						className="Portfolio-button-text"
-						to="/SoftwarePortfolio">
-						<span>Software</span>
-						<div className="Portfolio-button-image Soft-image" />
-					</NavLink>
+			<div className="Portfolio-root-content">
+				<div
+					className={'Portfolio-button-text' + (activeList === 'games' ? ' active' : '')}
+					onClick={() => setActiveList('games')}>
+					<span>Games</span>
+					<div className="Portfolio-button-image Games-image" />
 				</div>
-
-				<Switch>
-					<Route path="/GamesPortolio">
-						<PortfolioContainer portfolio={gamesList} />
-					</Route>
-					<Route path="/SoftwarePortfolio">
-						<PortfolioContainer portfolio={softwareList} />
-					</Route>
-				</Switch>
-			</Router>
+				<div
+					activeClassName="active"
+					className={'Portfolio-button-text' + (activeList === 'soft' ? ' active' : '')}
+					onClick={() => setActiveList('soft')}>
+					<span>Software</span>
+					<div
+						className={
+							'Portfolio-button-image Soft-image' +
+							(activeList === 'soft' ? ' active' : '')
+						}
+					/>
+				</div>
+			</div>
+			{portfolioElements()}
 		</div>
 	);
 }
