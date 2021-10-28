@@ -22,12 +22,21 @@ const games = [
     projectLink: "https://predmada.itch.io/crate-spider",
   },
   {
-    title: "Larry's Mod",
+    title: "Larry's Rumble",
     year: 2019,
     imgSrc: require("../img/portfolio/larrys-rumble.png"),
-    description: `Larry's Mod was a multiplayer brawler game. You play as Larry the Lobster, and you have to
+    description: `Larry's Rumble was a multiplayer brawler game. You play as Larry the Lobster, and you have to
 		melee fight the other players. It was my first multiplayer game, and I used the mirror framework for networking.`,
     projectLink: "https://www.youtube.com/watch?v=FL8F9671tTg",
+  },
+  {
+    title: "Procedural RPG",
+    year: 2019,
+    imgSrc: require("../img/portfolio/procedural-rpg.png"),
+    description: `This was my exam project for the games Elective of my A.P. Degree. You play as a small man who travels a big procedural world.
+	  Along the way there are Ninja's who try to ruin your day, kill or be killed. I used an algorithm inspired dby Conway's
+	Game of Life to generate the terrain. For the AI I used A*. The game was played on Android phones. `,
+    projectLink: "https://www.youtube.com/watch?v=MiTozrF5V2A",
   },
   {
     title: "Adam's Tower Defense",
