@@ -1,5 +1,47 @@
 const games = [
   {
+    title: "The Great Oaks",
+    imgSrc: require("../img/portfolio/great_oaks.png"),
+    year: 2022,
+    description: `The Great Oaks is a 2.5D narrative driven local co-op platformer. It was created for the course Game World Design, where our 
+    goal was to create the first level of a believable game world that would leave the player asking for more. The game uniquely incorporates a 
+    dialogue system into a local co-op game, where the players each get to make choices for what they characters say to each other. 
+    Together with our narrative/audio designer I designed and implemented the dialogue system.`,
+    projectLink: "https://barrythecoolbee.itch.io/the-great-oaks",
+    video: "https://youtu.be/d1KePsYD-4g"
+  },
+  {
+    title: "Boat Attack",
+    imgSrc: require("../img/portfolio/boat_attack.jpeg"),
+    year: 2022,
+    description: `While I did not work on the gameplay of Boat Attack, I helped restructure the folder architecture of the 2021 branch to make it compatible with assembly 
+    definitions. I also implemented integrations tests for the input system and the replay cameras in the game. This was done while I was a 
+    student worker at Unity Technologies. Our main goal was to document the process of adding tests to an existing project. I did this by 
+    making the project compatible with assembly definitions, and due to time contraints, with as little code changes as possible. 
+    I would have liked to introduce interfaces and refactor some code to make it more testable.`,
+    sourceCode: "https://github.com/Unity-Technologies/BoatAttack/tree/testing/2021-update",
+  },
+  {
+    title: "Feral Sitters",
+    imgSrc: require("../img/portfolio/feral_sitters.png"),
+    year: 2021,
+    description: `Feral Sitters is a 4 player local co-op game created for my semester project for the course Making Games during my 1st semester 
+    at the IT-University. I was the tech lead for the project, and helped create the systems that allows players to carry object, place objects 
+    inside other objects, as well as heating up the bottle of milk. I also set up a continous deployment pipeline that would create builds 
+    whenever we pushed to our main branch.`,
+    projectLink: "https://pedrorainha.itch.io/feralsitters",
+    video: "https://www.youtube.com/watch?v=bYEzVGHy4xM",
+  },
+  {
+    title: "Space Monkeys",
+    imgSrc: require("../img/portfolio/space_monkeys.png"),
+    year: 2022,
+    description: `Space Monkeys was made with limited time while I was volunteering for Nordic GameJam in 2022. Using a Lego Technic hub 
+    me and my partner created a controller that would be used as a flight joystick. The game is a simple game where you shoot asteroids 
+    while avoiding being hit by them. The game can be played with the customer controller we created, or with mouse and keyboard.`,
+    projectLink: "https://predmada.itch.io/space-monkeys",
+  },
+  {
     title: "Happy Hour",
     imgSrc: require("../img/portfolio/happy-hour.png"),
     year: 2021,

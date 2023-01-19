@@ -2,9 +2,10 @@ import './PortfolioElement.scss';
 import * as React from 'react';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkIcon from '@mui/icons-material/Link';
+import YouTubeIcon from '@mui/icons-material/YouTube';
 
 function PortfolioElement(props) {
-	let { title, imgSrc, year, description, projectLink, sourceCode } = props.elementInfo;
+	let { title, imgSrc, year, description, projectLink, sourceCode, video } = props.elementInfo;
 
 	let buttons = () => {
 		let jsx = [];
@@ -22,6 +23,14 @@ function PortfolioElement(props) {
 				<span onClick={() => window.open(sourceCode)} className="Portfolio-element-button">
 					<GitHubIcon className="Portfolio-element-icon" />
 					<span>Source code</span>
+				</span>
+			);
+		}
+		if (video) {
+			jsx[counter++] = (
+				<span onClick={() => window.open(video)} className="Portfolio-element-button">
+					<YouTubeIcon className="Portfolio-element-icon" />
+					<span>Gameplay</span>
 				</span>
 			);
 		}
