@@ -5,7 +5,7 @@
 	flex-direction: column;
 	width: 100%;
 	min-height: 500px;
-	color: $primary-color;
+	color: $highlight-color;
 	h2 {
 		font-size: 3em;
 		width: 100%;
@@ -29,7 +29,7 @@
 
 			span {
 				position: absolute;
-				color: $primary-color;
+				color: $highlight-color;
 				z-index: 100;
 				pointer-events: none;
 			}
@@ -44,7 +44,7 @@
 				background-repeat: no-repeat;
 				background-size: cover;
 				border-radius: 20px;
-				color: $primary-color;
+				color: $highlight-color;
 				font-size: 48px;
 				cursor: pointer;
 				opacity: 0.3;
@@ -70,3 +70,4 @@
 		}
 	}
 }
+

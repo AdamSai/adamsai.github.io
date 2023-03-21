@@ -7,8 +7,25 @@ const games = [
     goal was to create the first level of a believable game world that would leave the player asking for more. The game uniquely incorporates a 
     dialogue system into a local co-op game, where the players each get to make choices for what they characters say to each other. 
     Together with our narrative/audio designer I designed and implemented the dialogue system.`,
+    responsibilities: [
+      "● Set up and decide how we worked with git",
+      <br />,
+
+      "● Set up the initial project with packages and FMOD",
+      <br />,
+      "● Participate in meetings and help design the game",
+      <br />,
+      "● Work together with designers to create and implement the dialogue system",
+      <br />,
+      "● Implement camera system that transitions between puzzle views and normal game view",
+      <br />,
+      "● Character selection menu",
+      <br />,
+      "● Various bug fixes and pair programming tasks",
+    ],
+    gameEngine: "Unity",
     projectLink: "https://barrythecoolbee.itch.io/the-great-oaks",
-    video: "https://youtu.be/d1KePsYD-4g"
+    video: "https://youtu.be/d1KePsYD-4g",
   },
   {
     title: "Boat Attack",
@@ -19,16 +36,44 @@ const games = [
     student worker at Unity Technologies. Our main goal was to document the process of adding tests to an existing project. I did this by 
     making the project compatible with assembly definitions, and due to time contraints, with as little code changes as possible. 
     I would have liked to introduce interfaces and refactor some code to make it more testable.`,
-    sourceCode: "https://github.com/Unity-Technologies/BoatAttack/tree/testing/2021-update",
+    responsibilities: [
+      "● Refactor the folder structure and implement assembly definitions",
+      <br />,
+      "● Implement Unit Tests to showcase how to use Unity Test Framework",
+    ],
+    gameEngine: "Unity",
+    sourceCode:
+      "https://github.com/Unity-Technologies/BoatAttack/tree/testing/2021-update",
   },
   {
     title: "Feral Sitters",
     imgSrc: require("../img/portfolio/feral_sitters.png"),
     year: 2021,
     description: `Feral Sitters is a 4 player local co-op game created for my semester project for the course Making Games during my 1st semester 
-    at the IT-University. I was the tech lead for the project, and helped create the systems that allows players to carry object, place objects 
+    at the IT-University. The goal of the game is for the players to complete a list of tasks to take care of a human baby.
+    I was the tech lead for the project, and helped create the systems that allows players to carry object, place objects 
     inside other objects, as well as heating up the bottle of milk. I also set up a continous deployment pipeline that would create builds 
     whenever we pushed to our main branch.`,
+    responsibilities: [
+      "● Participate in meetings and help design the game",
+      <br />,
+      "● I had the tech lead role and I set up and decide how we worked with git",
+      <br />,
+      "● Created Continous Deployment pipeline for game builds with Github Actions",
+      <br />,
+      "● Create basic AI for the baby running around",
+      <br />,
+      "● Create interactable system that allows players to interact with the items in the game",
+      <br />,
+      "● Create system to heat up bottles for the baby by putting them in the microwave, oven or near the fireplace",
+      <br />,
+      "● Various bug fixes and pair programming tasks",
+      <br />,
+      "● Character selection menu",
+      <br />,
+      "● Various bug fixes and pair programming tasks",
+    ],
+    gameEngine: "Unity",
     projectLink: "https://pedrorainha.itch.io/feralsitters",
     video: "https://www.youtube.com/watch?v=bYEzVGHy4xM",
   },
@@ -39,6 +84,8 @@ const games = [
     description: `Space Monkeys was made with limited time while I was volunteering for Nordic GameJam in 2022. Using a Lego Technic hub 
     me and my partner created a controller that would be used as a flight joystick. The game is a simple game where you shoot asteroids 
     while avoiding being hit by them. The game can be played with the customer controller we created, or with mouse and keyboard.`,
+    responsibilities: "",
+    gameEngine: "Unity",
     projectLink: "https://predmada.itch.io/space-monkeys",
   },
   {
@@ -50,6 +97,8 @@ const games = [
     they get, and the longer they have to wait, the likelier they are to start fighting. As the waiter
     you can also headbutt the patrons if you really feel like it. I worked on bug-fixing and refactoring 
     the AI after submission. I also tried out the new UI Toolkit for Unity.`,
+    responsibilities: "",
+    gameEngine: "Unity",
     sourceCode: "https://github.com/MrAbnox/LD49",
     projectLink: "https://pedrorainha.itch.io/ld-49-happy-hour",
   },
@@ -61,6 +110,7 @@ const games = [
     goal of the game is to clear all levels as fast as possible. Once you get the hang of how to 
     keep your momentum the game is really fun. It was made as a prototype for the class Making Games
     at the IT University of Copenhagen. `,
+    gameEngine: "Unity",
     projectLink: "https://predmada.itch.io/crate-spider",
   },
   {
@@ -69,6 +119,7 @@ const games = [
     imgSrc: require("../img/portfolio/larrys-rumble.png"),
     description: `Larry's Rumble was a multiplayer brawler game. You play as Larry the Lobster, and you have to
 		melee fight the other players. It was my first multiplayer game, and I used the mirror framework for networking.`,
+    gameEngine: "Unity",
     projectLink: "https://www.youtube.com/watch?v=FL8F9671tTg",
   },
   {
@@ -78,6 +129,7 @@ const games = [
     description: `This was my exam project for the games Elective of my A.P. Degree. You play as a small man who travels a big procedural world.
 	  Along the way there are Ninja's who try to ruin your day, kill or be killed. I used an algorithm inspired dby Conway's
 	Game of Life to generate the terrain. For the AI I used A*. The game was played on Android phones. `,
+    gameEngine: "Unity",
     projectLink: "https://www.youtube.com/watch?v=MiTozrF5V2A",
   },
   {
@@ -87,6 +139,7 @@ const games = [
     description: `My tower defense game was created as an assignment for the Games elective course
     during my A.P. Degree. The task was to create a tower defense game, where if the path was blocked,
     the AI would destroy towers to make a new path.`,
+    gameEngine: "Unity",
     projectLink: "https://predmada.itch.io/adams-tower-defense",
   },
   {
@@ -95,6 +148,7 @@ const games = [
     imgSrc: require("../img/portfolio/boost.png"),
     description: `Project Boost was my second ever Unity project. It was created as part of a 
     Udemy course to prepare me for my Games elective on the 4th Semester of my A.P. Degree.`,
+    gameEngine: "Unity",
     projectLink: "https://predmada.itch.io/project-boost",
   },
 ];

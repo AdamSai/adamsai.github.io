@@ -43,6 +43,17 @@ body,
 	}
 }
 
+.Portfolio-element-section-title, .Portfolio-element-title {
+	color: $highlight-color;
+	width: 100%
+}
+
+.Portfolio-element-title {
+	display:flex;
+	justify-content: center;
+	align-items: center;
+}
+
 @keyframes App-logo-spin {
 	from {
 		transform: rotate(0deg);

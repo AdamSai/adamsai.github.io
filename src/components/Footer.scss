@@ -10,6 +10,7 @@
 	justify-content: center;
 	min-height: 20vh;
 	pointer-events: none;
+	z-index: 100;
 	.Footer-icons {
 		pointer-events: all;
 		display: flex;
