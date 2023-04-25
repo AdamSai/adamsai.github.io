@@ -64,7 +64,7 @@ function PortfolioElement(props) {
           <span className="Portfolio-element-section-title">
             Responsibilities:
             <br />
-            <span class="Portfolio-element-responsibilities">
+            <span className="Portfolio-element-responsibilities">
               {responsibilities}
             </span>
           </span>
@@ -75,7 +75,6 @@ function PortfolioElement(props) {
 
   return (
     <div className="Portfolio-element">
-      {console.log(sourceCode)}
       <div className="Portfolio-element-title">
         <span>{title}</span>
       </div>
@@ -98,7 +97,7 @@ function PortfolioElement(props) {
       <div className="Portfolio-element-section-title">
         <span>
           Description: <br />
-          <span class="Portfolio-element-description">{description}</span>
+          <span className="Portfolio-element-description">{description}</span>
         </span>
       </div>
       {DisplayResponsibilitiesIfExists()}
