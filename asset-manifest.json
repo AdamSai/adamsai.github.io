@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.c83a89ae.css",
-    "main.js": "/static/js/main.1a4ffd89.js",
+    "main.js": "/static/js/main.303e6419.js",
     "static/js/787.b9dd4103.chunk.js": "/static/js/787.b9dd4103.chunk.js",
     "static/media/space_monkeys.png": "/static/media/space_monkeys.4a2bceb859c83229707a.png",
     "static/media/happy-hour.png": "/static/media/happy-hour.f894e7bcc55c3af88c37.png",
@@ -11,6 +11,7 @@
     "static/media/me.png": "/static/media/me.c12a5ccf82a76f2a3cbb.png",
     "static/media/core_decay_logo.jpg": "/static/media/core_decay_logo.f14d1c2e5e352b8c0c7f.jpg",
     "static/media/tower-defense.png": "/static/media/tower-defense.8adb623ec0263d797582.png",
+    "static/media/co-pirates.png": "/static/media/co-pirates.95aa49bb0a418ab4fc1b.png",
     "static/media/larrys-rumble.png": "/static/media/larrys-rumble.8b3c102abd0e26861724.png",
     "static/media/boat_attack.jpeg": "/static/media/boat_attack.1bfbebeb28fa96df395f.jpeg",
     "static/media/boost.png": "/static/media/boost.6abd2801fbc271222f73.png",
@@ -23,11 +24,11 @@
     "static/media/itchio.svg": "/static/media/itchio.13720af43a65be4454146264882dc5d7.svg",
     "index.html": "/index.html",
     "main.c83a89ae.css.map": "/static/css/main.c83a89ae.css.map",
-    "main.1a4ffd89.js.map": "/static/js/main.1a4ffd89.js.map",
+    "main.303e6419.js.map": "/static/js/main.303e6419.js.map",
     "787.b9dd4103.chunk.js.map": "/static/js/787.b9dd4103.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c83a89ae.css",
-    "static/js/main.1a4ffd89.js"
+    "static/js/main.303e6419.js"
   ]
 }
