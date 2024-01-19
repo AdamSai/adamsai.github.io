@@ -10,9 +10,9 @@ function Intro() {
 			<div className="Intro-content">
 				<Avatar className="Intro-image" alt="Adam Saidane" src={portrait} />
 				<div className="Intro-text">
-					Hello, my name is Adam Saidane and I am currently studying for my MSc. in Games
-					Technology at the IT University of Copenhagen, Denmark. I am currently working on my thesis, and will finish my studies in 
-					June 2023. I previously worked as a software engineer student worker at Unity Technologies. I am currently looking for student opportunities in the games industry.
+					Hello, my name is Adam Saidane, I'm a Game Developer and Software Engineer based in Copenhagen. I have previously worked at Slipgate Ironworks and Unity Technologies.
+					I am currently looking for remote or in-office opportunities within the games industry. I'm a fast learner and love learning new technologies. Difficult tasks are not scary
+					but an opportunity to learn and master something new! 
 				</div>
 			</div>
 		</div>

@@ -14,7 +14,9 @@ function PortfolioElement(props) {
     projectLink,
     sourceCode,
     video,
-    gameEngine
+    gameEngine,
+    company,
+    role
   } = props.elementInfo;
 
   let buttons = () => {
@@ -24,8 +26,7 @@ function PortfolioElement(props) {
       jsx[counter++] = (
         <span
           onClick={() => window.open(projectLink)}
-          className="Portfolio-element-button"
-        >
+          className="Portfolio-element-button">
           <LinkIcon className="Portfolio-element-icon" />
           <span>Project</span>
         </span>
@@ -35,8 +36,7 @@ function PortfolioElement(props) {
       jsx[counter++] = (
         <span
           onClick={() => window.open(sourceCode)}
-          className="Portfolio-element-button"
-        >
+          className="Portfolio-element-button">
           <GitHubIcon className="Portfolio-element-icon" />
           <span>Source code</span>
         </span>
@@ -46,9 +46,8 @@ function PortfolioElement(props) {
       jsx[counter++] = (
         <span
           onClick={() => window.open(video)}
-          className="Portfolio-element-button"
-        >
-          <YouTubeIcon className="Portfolio-element-icon" />
+          className="Portfolio-element-button">
+          <YouTubeIcon className="Portfolio-element-icon" style={{ color: 'red' }} />
           <span>Gameplay</span>
         </span>
       );
@@ -70,9 +69,20 @@ function PortfolioElement(props) {
           </span>
         </div>
       }
-    
-  }
+    }
 
+      let DisplayRoleIfExists = () => {
+        if (role) {
+          return <div>
+          <div className="Portfolio-element-section-title">
+            <span>
+              Role: <span style={{ color: "white" }}>{role}</span>
+            </span>
+          </div>
+        </div>
+        }
+      }
+    
   return (
     <div className="Portfolio-element">
       <div className="Portfolio-element-title">
@@ -90,9 +100,16 @@ function PortfolioElement(props) {
       </div>
       <div className="Portfolio-element-section-title">
         <span>
+          Company: <span style={{ color: "white" }}>{company ?? "Independent"}</span>
+        </span>
+      </div>
+      <div className="Portfolio-element-section-title">
+        <span>
           Engine: <span style={{ color: "white" }}>{gameEngine}</span>
         </span>
       </div>
+      {DisplayRoleIfExists()}
+
 
       <div className="Portfolio-element-section-title">
         <span>

@@ -1,27 +1,85 @@
 const games = [
   {
+    title: "Core Decay",
+    imgSrc: require("../img/portfolio/core_decay_logo.jpg"),
+    year: 2023,
+    company: "Slipgate-Ironworks",
+    role: "Programmer & Tech Artist",
+    description: `Core Decay is a game inspired by Deus Ex and System Shock 2. In the game combat is high-stakes and unforgiving, but it is not the only path to success. You may find it useful to avoid hostile engagement altogether and instead find creative solutions to reach your goals.
+    Talk to and persuade people, explore alternate routes, hack computers and security systems, discover lost logs, keycodes and passwords, and use every tool at your disposal to reach your objectives.
+    `,
+    responsibilities: [
+      <span className="portfolio-element-point-list">●</span>," Implement art assets from artists and setup gameobjects in Unity",
+      <br />,
+
+      <span className="portfolio-element-point-list">●</span>," Gameplay programming",
+      <br />,
+      <span className="portfolio-element-point-list">●</span>," Tools Programming",
+      <br />,
+      <span className="portfolio-element-point-list">●</span>," Work together with designers to create and implement the dialogue system",
+      <br />,
+      <span className="portfolio-element-point-list">●</span>," Implement camera system that transitions between puzzle views and normal game view",
+      <br />,
+      <span className="portfolio-element-point-list">●</span>," Character selection menu",
+      <br />,
+      <span className="portfolio-element-point-list">●</span>," Various bug fixes and pair programming tasks",
+    ],
+    gameEngine: "Unity",
+    projectLink: "https://store.steampowered.com/app/1260940/Core_Decay/",
+    video: "https://www.youtube.com/watch?v=cpVB-52enLA",
+  },
+  {
+    title: "Co-Pirates",
+    imgSrc: require("../img/portfolio/co-pirates.png"),
+    year: 2023,
+    company: "IT-University of Copenhagen",
+    role: "Systems & Audio Programmer",
+    description: `Co-Pirates is a 3-player local couch roguelike co-op game, where 3 pirates search the high seas in the quest for plunder.
+    The game currently features two floors and two very diverse boss fights. Let us know how far you get!
+    We developed this project for our thesis to help us understand if adding roguelite mechanics to a couch co-op game will make it more replayable.    `,
+    responsibilities: [
+      <span className="portfolio-element-point-list">●</span>," Create various systems enabling gameplay, such as an interactable system allowing players to interact with different types of objects.",
+      <br />,
+
+      <span className="portfolio-element-point-list">●</span>," Implement audio using FMOD",
+      <br />,
+      <span className="portfolio-element-point-list">●</span>," Gameplay programming",
+      <br />,
+      <span className="portfolio-element-point-list">●</span>," AI Programming",
+      <br />,
+      <span className="portfolio-element-point-list">●</span>," UI Programming",
+      <br />,
+      <span className="portfolio-element-point-list">●</span>," Character selection menu",
+    ],
+    gameEngine: "Unity",
+    projectLink: "https://pedrorainha.itch.io/co-pirates",
+    video: "https://www.youtube.com/watch?v=SiepPmR8soU",
+  },
+  {
     title: "The Great Oaks",
     imgSrc: require("../img/portfolio/great_oaks.png"),
     year: 2022,
+    company: "IT-University of Copenhagen",
+    role: "Programmer",
     description: `The Great Oaks is a 2.5D narrative driven local co-op platformer. It was created for the course Game World Design, where our 
     goal was to create the first level of a believable game world that would leave the player asking for more. The game uniquely incorporates a 
     dialogue system into a local co-op game, where the players each get to make choices for what they characters say to each other. 
     Together with our narrative/audio designer I designed and implemented the dialogue system.`,
     responsibilities: [
-      "● Set up and decide how we worked with git",
+      <span className="portfolio-element-point-list">●</span>," Set up and decide how we worked with git",
       <br />,
 
-      "● Set up the initial project with packages and FMOD",
+      <span className="portfolio-element-point-list">●</span>," Set up the initial project with packages and FMOD",
       <br />,
-      "● Participate in meetings and help design the game",
+      <span className="portfolio-element-point-list">●</span>," Participate in meetings and help design the game",
       <br />,
-      "● Work together with designers to create and implement the dialogue system",
+      <span className="portfolio-element-point-list">●</span>," Work together with designers to create and implement the dialogue system",
       <br />,
-      "● Implement camera system that transitions between puzzle views and normal game view",
+      <span className="portfolio-element-point-list">●</span>," Implement camera system that transitions between puzzle views and normal game view",
       <br />,
-      "● Character selection menu",
+      <span className="portfolio-element-point-list">●</span>," Character selection menu",
       <br />,
-      "● Various bug fixes and pair programming tasks",
+      <span className="portfolio-element-point-list">●</span>," Various bug fixes and pair programming tasks",
     ],
     gameEngine: "Unity",
     projectLink: "https://barrythecoolbee.itch.io/the-great-oaks",
@@ -30,6 +88,8 @@ const games = [
   {
     title: "Boat Attack",
     imgSrc: require("../img/portfolio/boat_attack.jpeg"),
+    role: "Programmer",
+    company: "Unity Technologies",
     year: 2022,
     description: `While I did not work on the gameplay of Boat Attack, I helped restructure the folder architecture of the 2021 branch to make it compatible with assembly 
     definitions. I also implemented integrations tests for the input system and the replay cameras in the game. This was done while I was a 
@@ -37,9 +97,9 @@ const games = [
     making the project compatible with assembly definitions, and due to time contraints, with as little code changes as possible. 
     I would have liked to introduce interfaces and refactor some code to make it more testable.`,
     responsibilities: [
-      "● Refactor the folder structure and implement assembly definitions",
+      <span className="portfolio-element-point-list">●</span>," Refactor the folder structure and implement assembly definitions",
       <br />,
-      "● Implement Unit Tests to showcase how to use Unity Test Framework",
+      <span className="portfolio-element-point-list">●</span>," Implement Unit Tests to showcase how to use Unity Test Framework",
     ],
     gameEngine: "Unity",
     sourceCode:
@@ -49,29 +109,31 @@ const games = [
     title: "Feral Sitters",
     imgSrc: require("../img/portfolio/feral_sitters.png"),
     year: 2021,
+    company: "IT-University of Copenhagen",
+    role: "Tech Lead",
     description: `Feral Sitters is a 4 player local co-op game created for my semester project for the course Making Games during my 1st semester 
     at the IT-University. The goal of the game is for the players to complete a list of tasks to take care of a human baby.
     I was the tech lead for the project, and helped create the systems that allows players to carry object, place objects 
     inside other objects, as well as heating up the bottle of milk. I also set up a continous deployment pipeline that would create builds 
     whenever we pushed to our main branch.`,
     responsibilities: [
-      "● Participate in meetings and help design the game",
+      <span className="portfolio-element-point-list">●</span>," Participate in meetings and help design the game",
       <br />,
-      "● I had the tech lead role and I set up and decide how we worked with git",
+      <span className="portfolio-element-point-list">●</span>," I had the tech lead role and I set up and decide how we worked with git",
       <br />,
-      "● Created Continous Deployment pipeline for game builds with Github Actions",
+      <span className="portfolio-element-point-list">●</span>," Created Continous Deployment pipeline for game builds with Github Actions",
       <br />,
-      "● Create basic AI for the baby running around",
+      <span className="portfolio-element-point-list">●</span>," Create basic AI for the baby running around",
       <br />,
-      "● Create interactable system that allows players to interact with the items in the game",
+      <span className="portfolio-element-point-list">●</span>," Create interactable system that allows players to interact with the items in the game",
       <br />,
-      "● Create system to heat up bottles for the baby by putting them in the microwave, oven or near the fireplace",
+      <span className="portfolio-element-point-list">●</span>," Create system to heat up bottles for the baby by putting them in the microwave, oven or near the fireplace",
       <br />,
-      "● Various bug fixes and pair programming tasks",
+      <span className="portfolio-element-point-list">●</span>," Various bug fixes and pair programming tasks",
       <br />,
-      "● Character selection menu",
+      <span className="portfolio-element-point-list">●</span>," Character selection menu",
       <br />,
-      "● Various bug fixes and pair programming tasks",
+      <span className="portfolio-element-point-list">●</span>," Various bug fixes and pair programming tasks",
     ],
     gameEngine: "Unity",
     projectLink: "https://pedrorainha.itch.io/feralsitters",
@@ -79,6 +141,7 @@ const games = [
   },
   {
     title: "Space Monkeys",
+    role: "Programmer",
     imgSrc: require("../img/portfolio/space_monkeys.png"),
     year: 2022,
     description: `Space Monkeys was made with limited time while I was volunteering for Nordic GameJam in 2022. Using a Lego Technic hub 
@@ -92,6 +155,7 @@ const games = [
     title: "Happy Hour",
     imgSrc: require("../img/portfolio/happy-hour.png"),
     year: 2021,
+    role: "Programmer",
     description: `Happy Hour was made for Ludom Dare 49. The theme was 'unstable' and we decided
     to make a beer serving game. You have to serve beers to customers before they get angry. The drunker
     they get, and the longer they have to wait, the likelier they are to start fighting. As the waiter
