@@ -2,7 +2,7 @@ const games = [
   {
     title: "Core Decay",
     imgSrc: require("../img/portfolio/core_decay_logo.jpg"),
-    year: 2023,
+    year: "To be announced",
     company: "Slipgate-Ironworks",
     role: "Programmer & Tech Artist",
     description: `Core Decay is a game inspired by Deus Ex and System Shock 2. In the game combat is high-stakes and unforgiving, but it is not the only path to success. You may find it useful to avoid hostile engagement altogether and instead find creative solutions to reach your goals.
@@ -16,13 +16,7 @@ const games = [
       <br />,
       <span className="portfolio-element-point-list">●</span>," Tools Programming",
       <br />,
-      <span className="portfolio-element-point-list">●</span>," Work together with designers to create and implement the dialogue system",
-      <br />,
-      <span className="portfolio-element-point-list">●</span>," Implement camera system that transitions between puzzle views and normal game view",
-      <br />,
-      <span className="portfolio-element-point-list">●</span>," Character selection menu",
-      <br />,
-      <span className="portfolio-element-point-list">●</span>," Various bug fixes and pair programming tasks",
+      <span className="portfolio-element-point-list">●</span>," Juice gameplay elements",
     ],
     gameEngine: "Unity",
     projectLink: "https://store.steampowered.com/app/1260940/Core_Decay/",
@@ -86,6 +80,18 @@ const games = [
     video: "https://youtu.be/d1KePsYD-4g",
   },
   {
+    title: "Funky Monkey",
+    imgSrc: require("../img/portfolio/funky_monkey.png"),
+    role: "Programmer/Designer",
+    year: 2024,
+    description: `A game made for Global Game Jam 2024 where the theme was "Make Me Laugh". We decided to create a humerous game where you play as a monkey, pranking people
+     by throwing bananas at them. I did most of the programming and the audio implementation.`,
+    gameEngine: "Unity",
+    projectLink:
+      "https://nnaya.itch.io/funky-monkey",
+      video: "https://youtu.be/tfFdpWestGI"
+  },
+  {
     title: "Boat Attack",
     imgSrc: require("../img/portfolio/boat_attack.jpeg"),
     role: "Programmer",
@@ -138,6 +144,30 @@ const games = [
     gameEngine: "Unity",
     projectLink: "https://pedrorainha.itch.io/feralsitters",
     video: "https://www.youtube.com/watch?v=bYEzVGHy4xM",
+  }
+  ,
+  {
+    title: "RogueDino",
+    imgSrc: require("../img/portfolio/rogue_dino_2.png"),
+    year: 2021,
+    company: "IT-University of Copenhagen",
+    role: "Audio Programmer & Systems Programmer",
+    gameEngine: "Simple Render Engine",
+    description: `This project is a 2D Top-Down Rogue-like game inspired by the traditional and
+    basic elements of a game of this genre. It is composed of procedurally generated
+    rooms, different weapons and some enemies randomly distributed through the rooms.
+    The player must defend itself and kill all the enemies of the level. The project was
+    developed using C++, using the Simple Render Engine by Morten Nobel.`,
+    responsibilities: [
+      <span className="portfolio-element-point-list">●</span>," Implemented FMOD into the engine",
+      <br />,
+      <span className="portfolio-element-point-list">●</span>," Created Audio Component to game objects can play sounds",
+      <br />,
+      <span className="portfolio-element-point-list">●</span>," Create basic game object serialization system from JSON",
+    ],
+    projectLink: "https://predmada.itch.io/roguedino",
+    sourceCode: "https://github.com/BapInc/GamesProgrammingExam",
+    video: "https://www.youtube.com/watch?v=jT3ySnlIO50",
   },
   {
     title: "Space Monkeys",
